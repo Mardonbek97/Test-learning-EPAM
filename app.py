@@ -389,26 +389,24 @@ class Checking_info:
 student = Checking_info("Mardonbek", "Sobirov", "03.10.1997", "Smardonbek9797@gmail.com")
 student.all_info()
 
-class Checking_info:
-    def __init__(self, name, sname, birth_date, mail):
-        self.name=name
-        self.sname=sname
-        self.birth_date=birth_date
-        self.mail=mail
-    def get_sname(self, sname):
-        self.sname=sname
-    def get_birthdate(self, birth_date):
-        self.birth_date=birth_date
-    def get_mail(self, mail):
-        self.mail=mail
+class Checking_info2:
+    def __init__(self, region, birth_country, email):
+        self.region=region
+        self.birth_country=birth_country
+        self.email=email
+    def get_sname(self, region):
+        self.region=region
+    def get_birthdate(self, birth_country):
+        self.birth_country=birth_country
+    def get_mail(self, email):
+        self.email=email
     def all_info(self):
         
-        print(f"To'liq ismingiz: {self.name} {self.sname}"
-              f"\nTugulgan kuninghiz: {self.birth_date}"
+        print(f"To'liq ismingiz: {self.region} {self.birth_country}"
               f"\nelektron pochtangiz: {self.mail}")
  
-# student = Checking_info("Sultonbek", "Sobirov", "13.10.1994", "Smardonbek9799@gmail.com")
-# student.all_info()
+student = Checking_info2("Sultonbek", "Sobirov", "Smardonbek9799@gmail.com")
+student.all_info()
 
 
 
